@@ -7,14 +7,15 @@ function LocationInfo({ location, error, onClear }) {
         <div className="text-red-600">{error}</div>
       ) : location ? (
         <div className="info">
-          <h2 className="text-2xl font-bold title">LocoZip Insights</h2>
-          <p className="mt-4 count">Country: {location.country}</p>
+          
+          
           {location.places.map((place, index) => (
             <div key={index} className="mt-4 extra">
               <p>State: {place.state}</p>
               <p>Place Name: {place['place name']}</p>
             </div>
           ))}
+          <p className="mt-4 count">Country: {location.country}</p>
             
           <button
             onClick={onClear}

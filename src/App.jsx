@@ -15,7 +15,7 @@ function App() {
     setLoading(true);
     setError(null);
 
-    const apiUrl = `https://api.zippopotam.us/in/${postalCode}`; 
+    const apiUrl = `https://api.zippopotam.us/IN/${postalCode}`; 
 
     try {
       const response = await axios.get(apiUrl);

@@ -9,6 +9,8 @@ function UserInput({ onSearch, loading }) {
 
   return (
     <div className="p-4 text-center back-input">
+    <h2 className="text-2xl font-bold title">LocoZip Insights</h2>
+      
       <input
         type="text"
         placeholder="Enter Zip code"
