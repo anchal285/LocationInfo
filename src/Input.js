@@ -14,12 +14,12 @@ function UserInput({ onSearch, loading }) {
         placeholder="Enter Zip code"
         value={postalCode}
         onChange={(e) => setPostalCode(e.target.value)}
-        className="w-64 px-3 py-2 border rounded-md input1"
+        className="w-64 px-3 py-2 border rounded-md input1 input2"
       />
       <button
         onClick={handleSubmit}
         disabled={loading}
-        className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+        className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-#00b386-500 btn-color"
       >
         {loading ? 'Loading...' : 'Search'}
       </button>

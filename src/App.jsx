@@ -15,7 +15,7 @@ function App() {
     setLoading(true);
     setError(null);
 
-    const apiUrl = `http://api.zippopotam.us/IN/${postalCode}`; 
+    const apiUrl = `https://api.zippopotam.us/in/${postalCode}`; 
 
     try {
       const response = await axios.get(apiUrl);
@@ -36,7 +36,7 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto p-8 bg-blue-200 main-background">
+    <div className='main-div' >
       
       <UserInput onSearch={fetchLocationInfo} loading={loading} />
       <LocationInfo location={location} error={error} onClear={clearLocationInfo} />
